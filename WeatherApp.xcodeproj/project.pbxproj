@@ -11,6 +11,9 @@
 		CDE6637A28B2C2840032CA67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6637928B2C2840032CA67 /* ContentView.swift */; };
 		CDE6637C28B2C2850032CA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE6637B28B2C2850032CA67 /* Assets.xcassets */; };
 		CDE6637F28B2C2850032CA67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE6637E28B2C2850032CA67 /* Preview Assets.xcassets */; };
+		CDE6638928B2C2CD0032CA67 /* Utiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6638828B2C2CD0032CA67 /* Utiles.swift */; };
+		CDE6638B28B2CA510032CA67 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6638A28B2CA510032CA67 /* Weather.swift */; };
+		CDE6638D28B2CA660032CA67 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6638C28B2CA660032CA67 /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		CDE6637928B2C2840032CA67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CDE6637B28B2C2850032CA67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDE6637E28B2C2850032CA67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CDE6638828B2C2CD0032CA67 /* Utiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utiles.swift; sourceTree = "<group>"; };
+		CDE6638A28B2CA510032CA67 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		CDE6638C28B2CA660032CA67 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		CDE6638E28B2CE330032CA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +58,15 @@
 		CDE6637628B2C2840032CA67 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				CDE6638E28B2CE330032CA67 /* Info.plist */,
+				CDE6638728B2C2A50032CA67 /* ViewModel */,
+				CDE6638628B2C29D0032CA67 /* Models */,
+				CDE6638528B2C28E0032CA67 /* Views */,
 				CDE6637728B2C2840032CA67 /* WeatherAppApp.swift */,
 				CDE6637928B2C2840032CA67 /* ContentView.swift */,
 				CDE6637B28B2C2850032CA67 /* Assets.xcassets */,
 				CDE6637D28B2C2850032CA67 /* Preview Content */,
+				CDE6638828B2C2CD0032CA67 /* Utiles.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -65,6 +77,29 @@
 				CDE6637E28B2C2850032CA67 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CDE6638528B2C28E0032CA67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDE6638628B2C29D0032CA67 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDE6638A28B2CA510032CA67 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CDE6638728B2C2A50032CA67 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CDE6638C28B2CA660032CA67 /* WeatherViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE6638D28B2CA660032CA67 /* WeatherViewModel.swift in Sources */,
+				CDE6638B28B2CA510032CA67 /* Weather.swift in Sources */,
+				CDE6638928B2C2CD0032CA67 /* Utiles.swift in Sources */,
 				CDE6637A28B2C2840032CA67 /* ContentView.swift in Sources */,
 				CDE6637828B2C2840032CA67 /* WeatherAppApp.swift in Sources */,
 			);
@@ -270,6 +308,7 @@
 				DEVELOPMENT_TEAM = F9UA2HMXA4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +338,7 @@
 				DEVELOPMENT_TEAM = F9UA2HMXA4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
