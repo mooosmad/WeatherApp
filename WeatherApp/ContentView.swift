@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var currentViewModel = WeatherViewModel()
+    
+    @State var text = " "
+    
     var body: some View {
         VStack{
+            
+            Text("Okay wait this is a test");
             
         }
     }
